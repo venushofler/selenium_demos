@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="218946" started-at="2019-03-08T03:38:00Z" finished-at="2019-03-08T03:41:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="218946" started-at="2019-03-08T03:38:00Z" finished-at="2019-03-08T03:41:39Z">
+      <class name="ferguson.FergusonNavTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ferguson.FergusonNavTest@4439f31e]" name="setUp" is-config="true" duration-ms="92991" started-at="2019-03-07T22:38:00Z" finished-at="2019-03-07T22:39:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="QuickLinks_Showroom()[pri:0, instance:ferguson.FergusonNavTest@4439f31e]" name="QuickLinks_Showroom" duration-ms="85522" started-at="2019-03-07T22:39:33Z" finished-at="2019-03-07T22:40:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuickLinks_Showroom -->
+        <test-method status="PASS" signature="QuickLinks_FindALocation()[pri:0, instance:ferguson.FergusonNavTest@4439f31e]" name="QuickLinks_FindALocation" duration-ms="15284" started-at="2019-03-07T22:40:59Z" finished-at="2019-03-07T22:41:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuickLinks_FindALocation -->
+        <test-method status="PASS" signature="QuickLinks_Orders()[pri:0, instance:ferguson.FergusonNavTest@4439f31e]" name="QuickLinks_Orders" duration-ms="25084" started-at="2019-03-07T22:41:14Z" finished-at="2019-03-07T22:41:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuickLinks_Orders -->
+      </class> <!-- ferguson.FergusonNavTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
