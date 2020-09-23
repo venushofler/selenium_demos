@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52089" started-at="2019-02-18T04:31:38Z" finished-at="2019-02-18T04:32:30Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52089" started-at="2019-02-18T04:31:38Z" finished-at="2019-02-18T04:32:30Z">
+      <class name="ashleyStewart.homePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ashleyStewart.homePageTest@56f4468b]" name="setUp" is-config="true" duration-ms="24638" started-at="2019-02-17T23:31:38Z" finished-at="2019-02-17T23:32:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginAccount()[pri:0, instance:ashleyStewart.homePageTest@56f4468b]" name="loginAccount" duration-ms="26256" started-at="2019-02-17T23:32:02Z" finished-at="2019-02-17T23:32:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAccount -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ashleyStewart.homePageTest@56f4468b]" name="tearDown" is-config="true" duration-ms="1139" started-at="2019-02-17T23:32:29Z" finished-at="2019-02-17T23:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ashleyStewart.homePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
