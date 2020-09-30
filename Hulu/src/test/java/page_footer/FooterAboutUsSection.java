@@ -11,17 +11,20 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.Test;
 
+import test_hulu_main_page.BaseTestHulu;
 
-public class FooterAboutUsSection {
+
+public class FooterAboutUsSection extends BaseTestHulu{
 	
 	WebDriver driver;
 	
 	By huluFooter = By.xpath("//footer[@id='FooterLg']");
-	By streamingLibLink = By.xpath("//a[contains(text(),'Streaming Library')]");
-	By liveTVLink = By.xpath("//div[@class='footer-section-container col-lg-8 col-md-12 footer-section-container-single col-xs-12']//div[@class='footer-row-expandable footer-row-collapsed']//div[1]//a[2]");
-	By liveNewsLink = By.xpath("//a[contains(text(),'Live News')]");
-	By liveSportsLink = By.xpath("//a[contains(text(),'Live Sports')]");
 	
+	//column6:
+	By press = By.xpath("//a[contains(text(),'Press')]");
+	By jobs = By.xpath("//a[contains(text(),'Jobs')]");
+	By contact = By.xpath("//a[contains(text(),'Contact')]");
+
 	public FooterAboutUsSection (WebDriver driver) {
 		this.driver = driver;
 	}
@@ -46,25 +49,22 @@ public class FooterAboutUsSection {
 		 js.executeScript("arguments[0].scrollIntoView(true);",element);
 	   }
 	 
-	 public void clickStreamingLibrary() {
-		 driver.findElement(streamingLibLink).click();
+	 public void clickPressLink() {
+		 driver.findElement(press).click();
 		 driver.navigate().back();
 	   }
 	 
-	 public void clickLiveTVLink() {
-		 driver.findElement(liveTVLink).click();
+	 public void clickJobsLink() {
+		 driver.findElement(jobs).click();
 		 driver.navigate().back();
 	   }
 	 
-	 public void clickLiveNewsLink() {
-		 driver.findElement(liveNewsLink).click();
+	 public void clickContactLink() {
+		 driver.findElement(contact).click();
 		 driver.navigate().back();
 	   }
 	 
-	 public void clickLiveSportsLink() {
-		 driver.findElement(liveSportsLink).click();
-		 driver.navigate().back();
-	   }
+
 	 
 
 	 
@@ -78,14 +78,27 @@ public class FooterAboutUsSection {
 			Thread.sleep(2000);
 			this.scrollToFooter();
 			Thread.sleep(2000);
-			this.clickStreamingLibrary();
+			
+			this.clickPressLink();
 			Thread.sleep(2000);
-			this.clickLiveTVLink();
+			
+			this.clickJobsLink();
 			Thread.sleep(2000);
-			this.clickLiveNewsLink();
-			Thread.sleep(2000);
-			this.clickLiveSportsLink();	
+			
+			this.clickContactLink();	
 			Thread.sleep(9000);
+		   }
+	 
+	 
+	 public void column6() throws InterruptedException {
+			// column6:
+			this.clickPressLink();
+			Thread.sleep(2000);
+			this.clickJobsLink();
+			Thread.sleep(2000);
+			this.clickContactLink();
+			Thread.sleep(9000);
+			
 		   }
 	 
 }
