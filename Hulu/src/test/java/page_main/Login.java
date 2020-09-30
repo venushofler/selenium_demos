@@ -14,10 +14,14 @@ public class Login {
 	WebDriver driver;
 	
 	By huluHeader = By.xpath("//h1[@id='regionMasthead']//img");
-	By loginBtn = By.xpath("//button[starts-with(@class,'jsx-') and contains(@class,'navigation__login-button navigation__action-button navigation__cta')]");
+	//By loginBtn = By.xpath("//button[starts-with(@class,'jsx-') and contains(@class,'navigation__login-button navigation__action-button navigation__cta')]");
+	By loginBtn = By.xpath("//button[@class='navigation__login-button navigation__action-button navigation__cta']");
+	
 	By emailInputField = By.xpath("//input[@id='email_id']");
 	By passwordInputField = By.xpath("//input[@id='password_id']");
-	By loginBtn2 = By.xpath("(//button[starts-with(@class,'jsx-') and contains(@class,'login-button')])[2]");
+	//By loginBtn2 = By.xpath("(//button[starts-with(@class,'jsx-') and contains(@class,'login-button')])[2]");
+	By loginBtn2 = By.xpath("//button[@class='jsx-1761454348 login-button']");
+	
 	
 	// pop-up "Watch Pen 15 modal"
 	By pen15modal = By.xpath("//div[@class='Modal__dialog Modal__dialog--visible']");

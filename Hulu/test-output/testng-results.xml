@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="135847" started-at="2020-09-30T21:39:25Z" finished-at="2020-09-30T21:41:41Z">
+  <suite name="Default suite" duration-ms="22031" started-at="2020-09-30T21:56:20Z" finished-at="2020-09-30T21:56:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="135847" started-at="2020-09-30T21:39:25Z" finished-at="2020-09-30T21:41:41Z">
-      <class name="test_hulu_main_page.FooterMainPage">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:test_hulu_main_page.FooterMainPage@ae45eb6]" name="setUp" is-config="true" duration-ms="7281" started-at="2020-09-30T21:39:25Z" finished-at="2020-09-30T21:39:32Z">
+    <test name="Default test" duration-ms="22031" started-at="2020-09-30T21:56:20Z" finished-at="2020-09-30T21:56:42Z">
+      <class name="test_hulu_main_page.HuluLogin">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test_hulu_main_page.HuluLogin@ae45eb6]" name="setUp" is-config="true" duration-ms="7903" started-at="2020-09-30T21:56:20Z" finished-at="2020-09-30T21:56:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="scroll2Footer()[pri:1, instance:test_hulu_main_page.FooterMainPage@ae45eb6]" name="scroll2Footer" duration-ms="2142" started-at="2020-09-30T21:39:32Z" description="scroll2Footer" finished-at="2020-09-30T21:39:34Z">
+        <test-method status="PASS" signature="accountLogin()[pri:1, instance:test_hulu_main_page.HuluLogin@ae45eb6]" name="accountLogin" duration-ms="13396" started-at="2020-09-30T21:56:28Z" description="accountLogin" finished-at="2020-09-30T21:56:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scroll2Footer -->
-        <test-method status="PASS" signature="testFooterColumn1()[pri:2, instance:test_hulu_main_page.FooterMainPage@ae45eb6]" name="testFooterColumn1" duration-ms="15972" started-at="2020-09-30T21:39:34Z" description="footerColumn1" finished-at="2020-09-30T21:39:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFooterColumn1 -->
-        <test-method status="PASS" signature="testFooterColumn2()[pri:3, instance:test_hulu_main_page.FooterMainPage@ae45eb6]" name="testFooterColumn2" duration-ms="30821" started-at="2020-09-30T21:39:50Z" description="footerColumn2" finished-at="2020-09-30T21:40:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFooterColumn2 -->
-        <test-method status="PASS" signature="testFooterColumn3()[pri:4, instance:test_hulu_main_page.FooterMainPage@ae45eb6]" name="testFooterColumn3" duration-ms="15309" started-at="2020-09-30T21:40:21Z" description="footerColumn3" finished-at="2020-09-30T21:40:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFooterColumn3 -->
-        <test-method status="PASS" signature="testFooterColumn4()[pri:4, instance:test_hulu_main_page.FooterMainPage@ae45eb6]" name="testFooterColumn4" duration-ms="19466" started-at="2020-09-30T21:40:36Z" description="footerColumn4" finished-at="2020-09-30T21:40:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFooterColumn4 -->
-        <test-method status="PASS" signature="testFooterColumn5()[pri:5, instance:test_hulu_main_page.FooterMainPage@ae45eb6]" name="testFooterColumn5" duration-ms="22195" started-at="2020-09-30T21:40:56Z" description="footerColumn5" finished-at="2020-09-30T21:41:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFooterColumn5 -->
-        <test-method status="PASS" signature="testFooterColumn6()[pri:6, instance:test_hulu_main_page.FooterMainPage@ae45eb6]" name="testFooterColumn6" duration-ms="21933" started-at="2020-09-30T21:41:18Z" description="footerColumn6" finished-at="2020-09-30T21:41:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testFooterColumn6 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test_hulu_main_page.FooterMainPage@ae45eb6]" name="tearDown" is-config="true" duration-ms="709" started-at="2020-09-30T21:41:40Z" finished-at="2020-09-30T21:41:41Z">
+        </test-method> <!-- accountLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test_hulu_main_page.HuluLogin@ae45eb6]" name="tearDown" is-config="true" duration-ms="720" started-at="2020-09-30T21:56:42Z" finished-at="2020-09-30T21:56:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test_hulu_main_page.FooterMainPage -->
+      </class> <!-- test_hulu_main_page.HuluLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

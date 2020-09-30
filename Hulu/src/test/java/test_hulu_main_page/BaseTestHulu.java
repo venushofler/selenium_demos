@@ -11,6 +11,7 @@ import page_footer.FooterAboutUsSection;
 import page_footer.FooterBrowseSection;
 import page_footer.FooterHelpSection;
 import page_main.Login;
+import page_main.SearchTitles;
 	
 	public class BaseTestHulu {
 	
@@ -18,6 +19,7 @@ import page_main.Login;
 	FooterBrowseSection objfooter;
 	FooterHelpSection objfooter2;
 	FooterAboutUsSection objfooter3;
+	SearchTitles objSearch;
 	
 	protected static WebDriver driver;
 	static String homePage = "https://www.hulu.com/welcome";

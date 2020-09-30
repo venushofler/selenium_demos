@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_hulu_main_page.FooterMainPage">
+      <class name="test_hulu_main_page.HuluLogin">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testFooterColumn2"/>
+          <include name="accountLogin"/>
         </methods>
-      </class> <!-- test_hulu_main_page.FooterMainPage -->
+      </class> <!-- test_hulu_main_page.HuluLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
