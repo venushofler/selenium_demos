@@ -17,10 +17,10 @@ public class FooterHelpSection {
 	WebDriver driver;
 	
 	By huluFooter = By.xpath("//footer[@id='FooterLg']");
-	By streamingLibLink = By.xpath("//a[contains(text(),'Streaming Library')]");
-	By liveTVLink = By.xpath("//div[@class='footer-section-container col-lg-8 col-md-12 footer-section-container-single col-xs-12']//div[@class='footer-row-expandable footer-row-collapsed']//div[1]//a[2]");
-	By liveNewsLink = By.xpath("//a[contains(text(),'Live News')]");
-	By liveSportsLink = By.xpath("//a[contains(text(),'Live Sports')]");
+	By acctBillingLink = By.xpath("//a[contains(text(),'Account & Billing')]");
+	By plansPricingLink = By.xpath("//a[contains(text(),'Plans & Pricing')]");
+	By supportedDevicesLink = By.xpath("//a[contains(text(),'Supported Devices')]");
+	By accessibilityLink = By.xpath("//a[contains(text(),'Accessibility')]");
 	
 	public FooterHelpSection (WebDriver driver) {
 		this.driver = driver;
@@ -46,23 +46,23 @@ public class FooterHelpSection {
 		 js.executeScript("arguments[0].scrollIntoView(true);",element);
 	   }
 	 
-	 public void clickStreamingLibrary() {
-		 driver.findElement(streamingLibLink).click();
+	 public void clickAcctBillingLink() {
+		 driver.findElement(acctBillingLink).click();
 		 driver.navigate().back();
 	   }
 	 
-	 public void clickLiveTVLink() {
-		 driver.findElement(liveTVLink).click();
+	 public void clickPlansPricingLink() {
+		 driver.findElement(plansPricingLink).click();
 		 driver.navigate().back();
 	   }
 	 
-	 public void clickLiveNewsLink() {
-		 driver.findElement(liveNewsLink).click();
+	 public void clickSupportedDevicesLink() {
+		 driver.findElement(supportedDevicesLink).click();
 		 driver.navigate().back();
 	   }
 	 
-	 public void clickLiveSportsLink() {
-		 driver.findElement(liveSportsLink).click();
+	 public void clickAccessibilityLink() {
+		 driver.findElement(accessibilityLink).click();
 		 driver.navigate().back();
 	   }
 	 
@@ -78,13 +78,25 @@ public class FooterHelpSection {
 			Thread.sleep(2000);
 			this.scrollToFooter();
 			Thread.sleep(2000);
-			this.clickStreamingLibrary();
+			this.clickAcctBillingLink();
 			Thread.sleep(2000);
-			this.clickLiveTVLink();
+			this.clickPlansPricingLink();
 			Thread.sleep(2000);
-			this.clickLiveNewsLink();
+			this.clickSupportedDevicesLink();
 			Thread.sleep(2000);
-			this.clickLiveSportsLink();	
+			this.clickAccessibilityLink();	
+			Thread.sleep(9000);
+		   }
+	 
+	 public void column5() throws InterruptedException {
+			// column5:
+			this.clickAcctBillingLink();
+			Thread.sleep(2000);
+			this.clickPlansPricingLink();
+			Thread.sleep(2000);
+			this.clickSupportedDevicesLink();
+			Thread.sleep(2000);
+			this.clickAccessibilityLink();
 			Thread.sleep(9000);
 		   }
 	 

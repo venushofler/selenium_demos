@@ -7,13 +7,17 @@ package test_hulu_main_page;
 	import org.testng.annotations.AfterClass;
 	import org.testng.annotations.BeforeClass;
 
+import page_footer.FooterAboutUsSection;
 import page_footer.FooterBrowseSection;
+import page_footer.FooterHelpSection;
 import page_main.Login;
 	
 	public class BaseTestHulu {
 	
 	Login objlogin;
 	FooterBrowseSection objfooter;
+	FooterHelpSection objfooter2;
+	FooterAboutUsSection objfooter3;
 	
 	protected static WebDriver driver;
 	static String homePage = "https://www.hulu.com/welcome";

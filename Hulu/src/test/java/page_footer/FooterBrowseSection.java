@@ -41,17 +41,8 @@ public class FooterBrowseSection {
 	By huluDisEspnLink = By.xpath("//a[contains(text(),'Hulu, Disney+, and ESPN+')]");
 	By disBundleNoAdsLink = By.xpath("//a[contains(text(),'Disney bundle with Hulu (No Ads)')]");
 	By disBundleLiveTVlink = By.xpath("//a[contains(text(),'Disney bundle with Hulu + Live TV')]");
-	
-	//column5:
-	By accountBilling = By.xpath("//a[contains(text(),'Account & Billing')]");
-	By plansPricing = By.xpath("//a[contains(text(),'Plans & Pricing')]");
-	By supportedDevices = By.xpath("//a[contains(text(),'Supported Devices')]");
-	By accessibility = By.xpath("//a[contains(text(),'Supported Devices')]");
-	
-	//column6:
-	By press = By.xpath("//a[contains(text(),'Press')]");
-	By jobs = By.xpath("//a[contains(text(),'Jobs')]");
-	By contact = By.xpath("//a[contains(text(),'Contact')]");
+		
+
 	
 	public FooterBrowseSection (WebDriver driver) {
 		this.driver = driver;
@@ -212,6 +203,19 @@ public class FooterBrowseSection {
 			this.clickShowtimeLink();
 			Thread.sleep(2000);
 			this.clickStarzLink();
-			Thread.sleep(9000);
+			Thread.sleep(2000);
 		   }
+
+	 public void column4() throws InterruptedException {
+			// column4:
+			this.clickHuluDisEspnLink();
+			Thread.sleep(2000);
+			this.clickDisBundleNoAdsLink();
+			Thread.sleep(2000);
+			this.clickDisBundleLiveTVlink();
+			Thread.sleep(9000);
+			
+		   }
+	 
+	
 }
